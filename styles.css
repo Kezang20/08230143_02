@@ -102,7 +102,7 @@ p {
   margin-top: 1rem;
   margin-right: 1rem;
   padding: 0.5rem 1rem;
-  background: rgb(95, 117, 216);
+  background: rgb(130, 195, 221);
   color: white;
   border-radius: 5px;
   font-weight: bold;
@@ -217,7 +217,7 @@ p {
     top: 60px; /* just below header */
     right: 0;
     width: 50%;
-    background-color: #3b80a8;
+    background-color: #b5eef8ec;
     max-height: 30vh; /* allows scrolling if menu is too tall */
     overflow-y: auto; /* scrollable */
     padding: 1rem;
