@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kezang Dema </title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Personal Portfolio</h1>
+      <nav class="nav">
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Future ICT Educator | Tech Enthusiast | Lifelong Learner</p>
+        <h2>Hello, I'm <span class="accent">Kezang Dema,</span></h2>
+        <p class="lead">
+          exploring how ideas, learning, and technology come together.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn">See Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img.jpg" alt="Photo of Kezang Dema">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Hi! I’m <Strong>Kezang Dema</Strong>, a passionate learner exploring the intersection of technology and education. I’m currently pursuing my bachelor’s in ICT at <strong>Samtse College of Education</strong>, with a goal to become a teacher who inspires students to be curious and creative. I love building projects that solve problems, experimenting with new tools, and sharing knowledge in ways that make learning fun and meaningful.
+      In my free time, I enjoy listening to music, painting rocks, drawing, and learning new skills. I’m always excited to take on challenges that help me grow.
+    </p>
+    <p>
+      I also like working with computers, trying out new tools, and finding ways to make classrooms more engaging and useful for students. Here, you can discover my projects, experiments, and journey as a learner and future educator.
+    </p>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section container">
+    <h2 class="section-title">Education</h2>
+    <ul class="education-list">
+      <li>
+        <strong>Bachelor of Education (ICT)</strong> — Samtse College of Education. 
+        <span class="muted">2023 – Present</span>
+      </li>
+      <li>
+        <strong>High School (Grade 11–12)</strong> — Studied ICT, practiced coding with <em>CodeMonkey</em> and beginner-level <em>Python</em>.
+      </li>
+      <li>
+        <strong>Middle School</strong> — Started using computers for schoolwork like presentations and typing.
+      </li>
+    </ul>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Technical</h3>
+        <ul>
+          <li>HTML & CSS (simple websites)</li>
+          <li>Python (beginner level)</li>
+          <li>CodeMonkey (block programming)</li>
+          <li>Microsoft Office (Word, PowerPoint, Excel)</li>
+          <li>Google Tools (Docs, Slides, Drive)</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Teaching</h3>
+        <ul>
+          <li>Lesson planning</li>
+          <li>ICT integration in classrooms</li>
+          <li>Basic classroom management</li>
+          <li>Teamwork and communication</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <article class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>This e-portfolio website, built with HTML and CSS, to showcase my learning and skills.</p>
+      </article>
+      <article class="project">
+        <h3>Responsible Social Media Lessons</h3>
+        <p>Created a teaching plan to guide students on safe and responsible social media use.</p>
+      </article>
+      <article class="project">
+        <h3>SQL Project</h3>
+        <p>Worked on a simple SQL project for Gym Management System in College.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2 class="section-title">Contact</h2>
+    <p>You can reach me at: 
+      <a href="mailto:08230143.sce@rub.edu.bt">08230143.sce@rub.edu.bt</a>
+    </p>
+    <form class="contact-form" action="#" method="POST" onsubmit="alert('Form is for display only.'); return false;">
+      <label>
+        <span>Your name</span>
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        <span>Your email</span>
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kezang Dema — E-Portfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+    menuBtn.addEventListener('click', () => {
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
